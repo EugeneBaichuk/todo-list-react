@@ -14,10 +14,10 @@ class App extends Component {
         value: 'aaa'
       },
       todoData: [
-        {name: 'Найти кофе', value:'Выбрать лучшую кофейню и пойти туда', id: 1, increase: false, rise: false},
-        {name: 'Выбрать', value:'Посмотреть меню и выбрать', id: 2, increase: false, rise: false},
-        {name: 'Выпить', value:'Насладиться ароматом и вкусом', id: 3, increase: false, rise: false},
-        {name: 'Зарядиться', value:'Зарядиться энергией для выполнения ДЗ', id: 4, increase: false, rise: false},
+        {name: 'Найти кофе', value:'Выбрать лучшую кофейню и пойти туда', id: 1},
+        {name: 'Выбрать', value:'Посмотреть меню и выбрать', id: 2},
+        {name: 'Выпить', value:'Насладиться ароматом и вкусом', id: 3},
+        {name: 'Зарядиться', value:'Зарядиться энергией для выполнения ДЗ', id: 4},
       ]
     }
   }
@@ -44,7 +44,6 @@ class App extends Component {
     const newItem = {
       name: data.name, 
       value: data.value,
-      increase: false,
       id: this.maxId++
   }
 
